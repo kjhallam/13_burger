@@ -24,7 +24,7 @@ function printQuestionMarks(num) {
 function objToSql(ob) {
     let arr = [];
 
-    for (var key in ob) {
+    for (let key in ob) {
         let value = ob[key];
 
         if(Object.hasOwnProperty.call(ob, key)) {
@@ -39,7 +39,8 @@ function objToSql(ob) {
 }
 
     const orm = {
-        all: function(tableInput, cb) {
+       
+    selectAll: function(tableInput, cb) {
             let queryString = "SELECT * FROM " + tableInput + ";";
             connection.query(queryString, function(err, results) {
                 if (err) {
@@ -48,7 +49,7 @@ function objToSql(ob) {
                 cb(result);
             });
         },
-    create: function(table, cols, vals, cb) {
+    insertOne: function(table, cols, vals, cb) {
         let queryString = "INSERT INTO " + table;
 
         queryString += " (";
@@ -67,7 +68,7 @@ function objToSql(ob) {
             cb(result);
         });
     },
-    update: function(table, obColVals, condition, cb) {
+    updateAll: function(table, obColVals, condition, cb) {
         let queryString = "UPDATE " + table;
 
         queryString += " SET";
@@ -75,7 +76,7 @@ function objToSql(ob) {
         queryString += " WHERE";
         queryString += condition;
 
-        console.log(querySrting);
+        console.log(queryString);
         connection.query(queryString, function(err, result) {
             if (err) {
                 throw err;
@@ -84,9 +85,9 @@ function objToSql(ob) {
         });
     },
     delete: function(table, condition, cb) {
-        let querySrting = "DELETE FROM " + table;
+        let queryString = "DELETE FROM " + table;
         queryString += " WHERE ";
-        querySrting += condition;
+        queryString += condition;
 
         connection.query(queryString, function(err, result) {
             if (err) {
