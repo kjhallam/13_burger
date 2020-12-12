@@ -1,15 +1,38 @@
+<h1>Eat-da-Burger</h1>
 
- {{!-- INSTRUCTION --}}
-{{!-- // Inside your `burger` directory, create a folder named `views`.
+<h2>If you dream it, we can create it!</h2>
 
-   * Create the `index.handlebars` file inside `views` directory.
+<ul>
+  {{#each burgers}}
+    {{#unless devoured }}
+      {{> burgers/burger-block devoured=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
 
-   * Create the `layouts` directory inside `views` directory.
+<h2>Burgers that are ordered!</h2>
 
-     * Create the `main.handlebars` file inside `layouts` directory.
+<ul>
+  {{#each burgers}}
+    {{#if devoured }}
+      {{> burgers/burger-block devoured=false}}
+    {{/if}}
+  {{/each}}
+</ul>
 
-     * Setup the `main.handlebars` file so it's able to be used by Handlebars.
+<h2>Add a Burger</h2>
+<form class="create-form">
+  <div class="form-group">
+    <label for="brgr">Burger:</label>
+    <input type="text" class="brgr" name="name">
+  </div>
 
-     * Setup the `index.handlebars` to have the template that Handlebars can render onto.
+  <div class="form-group">
+    <label for="devoured" class="for">Devoured?</label><br>
+    <input type="radio" class="devoured" value="1" checked>Devoured!<br>
+  </div>
 
-     * Create a button in `index.handlebars` that will submit the user input into the database. --}}
+  <button type="submit">Add Burger</button>
+
+</form>
+
