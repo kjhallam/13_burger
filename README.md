@@ -1,5 +1,5 @@
 
-# 🔗 [Eat-Da-Burger](https://github.com/kjhallam/13_burger.git)
+# 🍔 [Eat-Da-Burger](https://github.com/kjhallam/13_burger.git)
 
 ## LICENSE
 
@@ -28,9 +28,8 @@
   4. [CONTRIBUTING](#contributing)
   5. [TEST](#test)
   6. [GITHUB](#github)
-  7. [PREVIEW](#preview)
-  8. [SCREENSHOTS](#screenshots)
-  9. [QUESTIONS](#questions)
+  7. [SCREENSHOTS](#screenshots)
+  8. [QUESTIONS](#questions)
   
 ---
 
@@ -40,7 +39,7 @@ Installed npm express, npm express-handlebars, npm mysql, npm init (json-package
 
 ---
 
-## 📓 USAGE
+## ⚙️ USAGE
 
 In this assignment, you'll create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
 
@@ -62,11 +61,6 @@ N/A
 
 [https://github.com/kjhallam](http://github.com/https://github.com/kjhallam)
 
----
-
-## 🎥 PREVIEW
-
-N/A
 ---
 
 ## 📷 SCREENSHOTS
