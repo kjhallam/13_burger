@@ -1,7 +1,11 @@
 <img src="/assets/img/burger-logo.png" alt="burger-logo">
 
-<h2>If you dream it, we can create it!</h2>
+<h1>Eat-da-Burger</h1>
+<br>
 <hr>
+<div class="container">
+<div class="row">
+  <div class="col-md-6">
 <ul>
   {{#each burgers}}
     {{#unless devoured }}
@@ -9,7 +13,10 @@
     {{/unless}}
   {{/each}}
 </ul>
-
+</div>
+<hr>
+<div class="col-md-6">
+  <h2>Devoured</h2>
 <ul>
   {{#each burgers}}
     {{#if devoured }}
@@ -17,16 +24,17 @@
     {{/if}}
   {{/each}}
 </ul>
+</div>
+</div>
 <hr>
-
 <h2>Add a Burger</h2>
 <form class="create-form">
   <div class="form-group">
-    <label for="brgr">Burger:</label>
+    {{!-- <label for="brgr"></label> --}}
     <input type="text" class="brgr" name="name">
   </div>
 
-  <button type="submit">Submit</button>
+  <button id="submitbtn" type="submit">Submit</button>
 
 </form>
-
+</div>
