@@ -14,18 +14,6 @@ body {
     text-align: center;
 }
 
-button {
-    border-radius: 30px;
-    background-image: linear-gradient(rgb(175, 114, 2), orange);
-    color: black;
-    border-color: orange;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    margin: 8px;
-    padding: 8px;
-}
-
 img {
     width: 200px;
     height: 200px;
@@ -39,4 +27,42 @@ ul {
     font-size: 24px;
     font-weight: 300;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    justify-content: center;
+    width: 45vw;
+    height: 4rem;
+    margin: 5px;
+    padding: 2px;
+    background-image: linear-gradient(gray, whitesmoke);
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.change-burger {
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(175, 114, 2), orange);
+    color: black;
+    border-color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    margin: 3px;
+    padding: 10px;
+}
+
+#submitbtn {
+    width: 100px;
+    border-radius: 10px;
+    background-image: linear-gradient(darkgray, white, lightgray);
+    color: black;
+    border-color: gray;
+    box-shadow: 2px 2px 2px 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: bolder;
+    margin: 4px;
+    padding: 12px;   
 }
