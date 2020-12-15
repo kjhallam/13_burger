@@ -1,0 +1,23 @@
+body {
+    background-image: url(../img/background.jpg);
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border-radius: 20px;
+    border-color: orange;
+    color: transparent;
+    border-width: 1px;
+    box-shadow: 3px 2px 2px 2px;
+    font: bold 14px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
