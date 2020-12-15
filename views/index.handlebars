@@ -1,3 +1,5 @@
+<img src="/assets/img/burger-logo.png" alt="burger-logo">
+
 <h1>Eat-da-Burger</h1>
 
 <h2>If you dream it, we can create it!</h2>
@@ -5,17 +7,17 @@
 <ul>
   {{#each burgers}}
     {{#unless devoured }}
-      {{> burgers/burger-block devoured=true}}
+      {{> burger-block devoured=false}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Burgers that are ordered!</h2>
+{{!-- <h2>Burgers that are ordered!</h2> --}}
 
 <ul>
   {{#each burgers}}
     {{#if devoured }}
-      {{> burgers/burger-block devoured=false}}
+      {{> burger-block devoured=true}}
     {{/if}}
   {{/each}}
 </ul>
@@ -25,11 +27,6 @@
   <div class="form-group">
     <label for="brgr">Burger:</label>
     <input type="text" class="brgr" name="name">
-  </div>
-
-  <div class="form-group">
-    <label for="devoured" class="for">Devoured?</label><br>
-    <input type="radio" class="devoured" value="1" checked>Devoured!<br>
   </div>
 
   <button type="submit">Submit</button>
