@@ -14,16 +14,16 @@ function objToSql(ob) {
     let arr = [];
 
     for (let key in ob) {
-        arr.push(key + "=" + ob[key]);
-        // let value = ob[key];
+        //arr.push(key + "=" + ob[key]);
+        let value = ob[key];
 
-        // if(Object.hasOwnProperty.call(ob, key)) {
+        if(Object.hasOwnProperty.call(ob, key)) {
 
-        //     if(typeof value === "string" && value.indexOf(" ") >= 0) {
-        //         value = "'" + value + "'";
-        //     }
-        //     arr.push(key + "=" + value);
-        // }
+            if(typeof value === "string" && value.indexOf(" ") >= 0) {
+                value = "'" + value + "'";
+            }
+            arr.push(key + "=" + value);
+        }
         return arr.toString();
     }
 }
@@ -58,7 +58,7 @@ function objToSql(ob) {
             cb(result);
         });
     },
-    updateOne: (table, obColVals, condition, cb) => {
+    updateOne: (table, objColVals, condition, cb) => {
         let queryString = "UPDATE " + table;
 
         queryString += " SET ";
