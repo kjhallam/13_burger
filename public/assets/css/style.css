@@ -32,13 +32,19 @@ ul {
 input {
     justify-content: center;
     width: 45vw;
-    height: 4rem;
-    margin: 5px;
-    padding: 2px;
+    height: 3rem;
+    margin: 15px;
+    padding-left: 30px;
     background-image: linear-gradient(gray, whitesmoke);
     border-radius: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 18px;
+}
+
+hr {
+    width: 100vw;
+    color: whitesmoke;
+    margin:10px 0px;
 }
 
 .change-burger {
