@@ -1,9 +1,7 @@
 <img src="/assets/img/burger-logo.png" alt="burger-logo">
 
-<h1>Eat-da-Burger</h1>
-
 <h2>If you dream it, we can create it!</h2>
-
+<hr>
 <ul>
   {{#each burgers}}
     {{#unless devoured }}
@@ -12,8 +10,6 @@
   {{/each}}
 </ul>
 
-{{!-- <h2>Burgers that are ordered!</h2> --}}
-
 <ul>
   {{#each burgers}}
     {{#if devoured }}
@@ -21,6 +17,7 @@
     {{/if}}
   {{/each}}
 </ul>
+<hr>
 
 <h2>Add a Burger</h2>
 <form class="create-form">
