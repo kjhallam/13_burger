@@ -44,7 +44,9 @@ input {
 hr {
     width: 100vw;
     color: whitesmoke;
-    margin:10px 0px;
+    height: 1px;
+    opacity: 60%;
+    margin: 10px 0px;
 }
 
 .change-burger {
