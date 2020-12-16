@@ -65,7 +65,7 @@ N/A
 
 ## 📷 SCREENSHOTS
 
-![text](image.jpg)
+![burger-image](./public/assets/img/burger-SS.png)
 ---
 
 ## ❔ QUESTIONS
