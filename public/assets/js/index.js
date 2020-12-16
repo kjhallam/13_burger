@@ -20,9 +20,9 @@ $(function() {
   
     $(".create-form").on("submit", function(event) {
       event.preventDefault();
-  
+      console.log($(".brgr").val());
       var newBurger = {
-        burger_name: {burger_name: $("#brgr").val(), devoured: 0,}
+        burger_name: $(".brgr").val()
       };
   
       $.ajax("/api/burgers", {
