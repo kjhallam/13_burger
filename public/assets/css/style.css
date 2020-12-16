@@ -14,6 +14,24 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-size: 48px;
+    font-variant: small-caps;
+    font-stretch: extra-expanded;
+    color: whitesmoke;
+    text-shadow: 4px 4px 6px black;
+
+}
+
+h2 {
+    font-size: 30px;
+    font-variant: small-caps;
+    font-stretch: extra-expanded;
+    color: whitesmoke;
+    text-shadow: 4px 4px 6px black;
+
+}
+
 img {
     width: 200px;
     height: 200px;
@@ -50,27 +68,36 @@ hr {
 }
 
 .change-devour {
-    border-radius: 10px;
+    border-radius: 13px;
     background-image: linear-gradient(rgb(175, 114, 2), orange);
     color: black;
     border-color: orange;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: bold;
     font-style: italic;
-    margin: 3px;
-    padding: 10px;
+    margin: 10px 3px;
+    padding: 8px;
 }
 
 #submitbtn {
     width: 100px;
-    border-radius: 10px;
+    border-radius: 13px;
     background-image: linear-gradient(darkgray, white, lightgray);
     color: black;
     border-color: gray;
     box-shadow: 2px 2px 2px 2px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    font-style: bolder;
+    font-weight: bolder;
     margin: 4px;
     padding: 12px;   
+}
+
+#devourIt {
+    color: rgb(114, 114, 114);
+    opacity: 80%;
+    font-size: 24px;
+    font-style: oblique;
+
 }
