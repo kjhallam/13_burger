@@ -67,6 +67,11 @@ hr {
     margin: 10px 0px;
 }
 
+li {
+    margin: 5px 0px;
+    padding: 2px 0px;
+}
+
 .change-devour {
     border-radius: 13px;
     background-image: linear-gradient(rgb(175, 114, 2), orange);
@@ -95,7 +100,7 @@ hr {
 }
 
 #devourIt {
-    color: rgb(114, 114, 114);
+    color: burlywood;
     opacity: 80%;
     font-size: 24px;
     font-style: oblique;
