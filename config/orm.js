@@ -1,5 +1,4 @@
-
-const connection = require("../config/connection.js");
+const connection = require('../config/connection.js');
 
 function printQuestionMarks(num) {
     let arr = [];
@@ -14,7 +13,6 @@ function objToSql(ob) {
     let arr = [];
 
     for (let key in ob) {
-        //arr.push(key + "=" + ob[key]);
         let value = ob[key];
 
         if(Object.hasOwnProperty.call(ob, key)) {
@@ -74,18 +72,7 @@ function objToSql(ob) {
             cb(result);
         });
     },
-    // delete: function(table, condition, cb) {
-    //     let queryString = "DELETE FROM " + table;
-    //     queryString += " WHERE ";
-    //     queryString += condition;
-
-    //     connection.query(queryString, function(err, result) {
-    //         if (err) {
-    //             throw err;
-    //         }
-    //         cb(result)
-    //     });
-    // }
+  
  };
 
  module.exports = orm;
